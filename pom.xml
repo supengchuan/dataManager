@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>BIT</groupId>
+    <artifactId>supc</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>supc</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-dev -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-dev</artifactId>
+            <version>3.7.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>3.6.14</version>
+        </dependency>
+
+
+        <!--  &lt;!&ndash; https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/LibSVM &ndash;&gt;
+          <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>LibSVM</artifactId>
+            <version>1.0.3</version>
+          </dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>2.6.10</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/gov.nist.math/jama -->
+        <dependency>
+            <groupId>gov.nist.math</groupId>
+            <artifactId>jama</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+    </dependencies>
+</project>

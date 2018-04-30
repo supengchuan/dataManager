@@ -1,0 +1,85 @@
+2018-04-13 23:21:03  [ main:0 ] - [ DEBUG ]  this is debug message!
+2018-04-13 23:21:03  [ main:3 ] - [ INFO ]  this is information!
+2018-04-13 23:21:03  [ main:3 ] - [ ERROR ]  this is error message!
+2018-04-14 09:09:50  [ main:0 ] - [ DEBUG ]  this is debug message!
+2018-04-14 09:09:50  [ main:3 ] - [ INFO ]  this is information!
+2018-04-14 09:09:50  [ main:3 ] - [ ERROR ]  this is error message!
+2018-04-14 09:09:50  [ main:6 ] - [ INFO ]  成败型打分方法被调用！
+2018-04-14 09:17:37  [ main:0 ] - [ DEBUG ]  this is debug message!
+2018-04-14 09:17:37  [ main:0 ] - [ INFO ]  this is information!
+2018-04-14 09:17:37  [ main:0 ] - [ ERROR ]  this is error message!
+2018-04-14 09:18:22  [ main:0 ] - [ DEBUG ]  this is debug message!
+2018-04-14 09:18:22  [ main:2 ] - [ INFO ]  this is information!
+2018-04-14 09:18:22  [ main:2 ] - [ ERROR ]  this is error message!
+2018-04-14 20:38:55  [ main:0 ] - [ INFO ]  创建一个PCA对象
+2018-04-14 20:38:55  [ main:59 ] - [ INFO ]  开始PCA计算
+2018-04-14 20:38:55  [ main:61 ] - [ INFO ]  PCA：计算关系矩阵
+2018-04-14 21:43:45  [ main:0 ] - [ INFO ]  创建一个PCA对象
+2018-04-14 21:43:45  [ main:3 ] - [ INFO ]  开始PCA计算
+2018-04-14 21:43:45  [ main:4 ] - [ INFO ]  PCA：计算关系矩阵
+2018-04-14 21:55:29  [ main:0 ] - [ INFO ]  创建一个AHP对象
+2018-04-14 21:55:29  [ main:3 ] - [ INFO ]  开始AHP的计算
+2018-04-14 22:00:20  [ main:0 ] - [ INFO ]  创建一个PCA对象
+2018-04-14 22:00:20  [ main:4 ] - [ INFO ]  开始PCA计算
+2018-04-14 22:00:20  [ main:5 ] - [ INFO ]  PCA：计算关系矩阵
+2018-04-14 22:00:27  [ main:0 ] - [ INFO ]  创建一个AHP对象
+2018-04-14 22:00:27  [ main:3 ] - [ INFO ]  开始AHP的计算
+2018-04-22 10:51:47  [ main:0 ] - [ INFO ]  单因素方差分析方法被调用
+2018-04-22 10:53:04  [ main:0 ] - [ INFO ]  OneWayANOVA单因素方差分析方法被调用
+2018-04-22 11:00:23  [ main:0 ] - [ INFO ]  双因素方差方法被调用
+[INFO ] 2018-04-22 11:07:16  [ main:0 ] - [ INFO ]  单因素方差分析方法被调用
+[INFO ] 2018-04-22 11:08:40,536 method:ProductQuality.OneWayANOVA.m_OneWayANOVA(OneWayANOVA.java:133)
+单因素方差分析方法被调用
+[INFO ] 2018-04-22 11:09:05,461 method:ProductQuality.OneWayANOVA.m_OneWayANOVA(OneWayANOVA.java:133)单因素方差分析方法被调用
+[INFO ] 2018-04-22 11:09:37,770 method:ProductQuality.OneWayANOVA.m_OneWayANOVA(OneWayANOVA.java:133) 单因素方差分析方法被调用
+[INFO ] 2018-04-30 10:33:43,386 method:Weight.EntropyWeight.m_EntropyWeight(EntropyWeight.java:23) 熵权法被调用
+[INFO ] 2018-04-30 10:33:43,399 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:33:43,400 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:33:43,400 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:33:43,401 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:33:43,401 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:33:43,401 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,154 method:Weight.EntropyWeight.m_EntropyWeight(EntropyWeight.java:23) 熵权法被调用
+[INFO ] 2018-04-30 10:34:24,158 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,158 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,159 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,159 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,159 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:34:24,159 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,686 method:Weight.EntropyWeight.m_EntropyWeight(EntropyWeight.java:23) 熵权法被调用
+[INFO ] 2018-04-30 10:36:26,690 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,691 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,691 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,691 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,691 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 10:36:26,692 method:Preprocessor.MinMax.m_MinMax(MinMax.java:47) MIN_MAX标准化方法被调用
+[INFO ] 2018-04-30 14:37:59,814 method:Score.IntervalType.m_IntervalType(IntervalType.java:26) 默认区间型打分方法，基于高斯基函数被调用
+[INFO ] 2018-04-30 14:39:56,630 method:Score.IntervalType.m_IntervalType(IntervalType.java:26) 默认区间型打分方法，基于高斯基函数被调用
+[INFO ] 2018-04-30 14:41:01,748 method:Score.IntervalType.m_IntervalType(IntervalType.java:26) 默认区间型打分方法，基于高斯基函数被调用
+[INFO ] 2018-04-30 14:42:14,795 method:Score.IntervalType.m_IntervalTypeWithLinarBase(IntervalType.java:43) 基于线性基函的区间型打分方法被调用
+[INFO ] 2018-04-30 14:42:14,799 method:Score.IntervalType.m_IntervalTypeWithSquareBase(IntervalType.java:57) 基于二次基函的区间型打分方法被调用
+[INFO ] 2018-04-30 14:42:14,800 method:Score.IntervalType.m_IntervalType(IntervalType.java:26) 默认区间型打分方法，基于高斯基函数被调用
+[INFO ] 2018-04-30 14:42:56,202 method:Score.IntervalType.m_IntervalTypeWithLinarBase(IntervalType.java:43) 基于线性基函的区间型打分方法被调用
+[INFO ] 2018-04-30 14:42:56,207 method:Score.IntervalType.m_IntervalTypeWithSquareBase(IntervalType.java:57) 基于二次基函的区间型打分方法被调用
+[INFO ] 2018-04-30 14:42:56,210 method:Score.IntervalType.m_IntervalType(IntervalType.java:26) 默认区间型打分方法，基于高斯基函数被调用
+[INFO ] 2018-04-30 15:13:46,994 method:Score.UpperLimit.m_UpperLimitWithLinearBase(UpperLimit.java:45) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:13:46,999 method:Score.UpperLimit.m_UpperLimit(UpperLimit.java:27) 默认方法基于高斯基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:13:47,007 method:Score.UpperLimit.m_UpperLimitWithSquareBase(UpperLimit.java:62) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:25:51,135 method:Score.UpperLimit.m_UpperLimitWithLinearBase(UpperLimit.java:46) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:25:51,140 method:Score.UpperLimit.m_UpperLimit(UpperLimit.java:28) 默认方法基于高斯基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:25:51,207 method:Score.UpperLimit.m_UpperLimitWithSquareBase(UpperLimit.java:63) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:26:35,144 method:Score.UpperLimit.m_UpperLimitWithLinearBase(UpperLimit.java:46) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:26:35,150 method:Score.UpperLimit.m_UpperLimit(UpperLimit.java:28) 默认方法基于高斯基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:26:35,218 method:Score.UpperLimit.m_UpperLimitWithSquareBase(UpperLimit.java:63) 基于二次基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:34:00,971 method:Score.UpperLimit.m_UpperLimitWithLinearBase(UpperLimit.java:46) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:34:00,977 method:Score.UpperLimit.m_UpperLimit(UpperLimit.java:28) 默认方法基于高斯基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:34:01,045 method:Score.UpperLimit.m_UpperLimitWithSquareBase(UpperLimit.java:72) 基于二次基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:36:05,564 method:Score.UpperLimit.m_UpperLimitWithLinearBase(UpperLimit.java:46) 基于线性基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:36:05,568 method:Score.UpperLimit.m_UpperLimit(UpperLimit.java:28) 默认方法基于高斯基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:36:05,635 method:Score.UpperLimit.m_UpperLimitWithSquareBase(UpperLimit.java:72) 基于二次基函数上限型打分方法被调用
+[INFO ] 2018-04-30 15:41:49,910 method:Score.LowerLimit.m_LowerLimit(LowerLimit.java:27) 下限型打分方法被调用。
+[INFO ] 2018-04-30 15:41:50,012 method:Score.LowerLimit.m_LowerLimitWithSquareBase(LowerLimit.java:69) 下限型打分方法被调用。
+[INFO ] 2018-04-30 15:41:50,151 method:Score.LowerLimit.m_LowerLimitWithLinearBase(LowerLimit.java:43) 下限型打分方法被调用。
+[INFO ] 2018-04-30 15:42:44,487 method:Score.LowerLimit.m_LowerLimit(LowerLimit.java:27) 默认高斯基函下限型打分方法被调用。
+[INFO ] 2018-04-30 15:42:44,592 method:Score.LowerLimit.m_LowerLimitWithSquareBase(LowerLimit.java:69) 二次基函数下限型打分方法被调用。
+[INFO ] 2018-04-30 15:42:44,734 method:Score.LowerLimit.m_LowerLimitWithLinearBase(LowerLimit.java:43) 线性基函数下限型打分方法被调用。

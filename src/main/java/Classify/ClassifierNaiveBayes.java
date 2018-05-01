@@ -23,10 +23,12 @@ public class ClassifierNaiveBayes {
 
     private static final Logger log = Logger.getLogger(ClassifierNaiveBayes.class);
     public ClassifierNaiveBayes() {
+        log.info("NaiveBayes分类器对象被创建");
         setClExist(false);
     }
 
     public void createClassifier(File fileName, String modelPath) {
+        log.info("创建NaiveBayes分类器模型");
         Instances insTrain = null;
 
         try {
@@ -51,6 +53,7 @@ public class ClassifierNaiveBayes {
     }
 
     public void loadClassifier(String filePathAndName) {
+        log.info("加载NaiveBayes分类器模型");
         try {
             this.cl = (Classifier) weka.core.SerializationHelper.read(filePathAndName);
             setClExist(true);
@@ -62,6 +65,7 @@ public class ClassifierNaiveBayes {
 
 
     public Instances evalClassifier(File fileName, String resPath) {
+        log.info("评估NaiveBayes分类器模型");
         Instances res = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -92,6 +96,7 @@ public class ClassifierNaiveBayes {
     }
 
     public Instances insClassify(File fileName, String resPath) {
+        log.info("使用NaiveBayes分类器模型");
         try {
             if (!isClExist()) {
                 log.error("Must be build classifier before classify data!");

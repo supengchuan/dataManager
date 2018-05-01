@@ -29,6 +29,7 @@ public class ClassifierDecisionTree {
     }
 
     public void createClassifier(File fileName, String modelPath) {
+        log.info("创建决策树分类器模型");
         Instances insTrain;
         try {
             ArffLoader loader = new ArffLoader();
@@ -51,6 +52,7 @@ public class ClassifierDecisionTree {
     }
 
     public void loadClassifier(String filePathAndName) {
+        log.info("加载决策树分类器模型");
         try {
             this.cl = (Classifier) weka.core.SerializationHelper.read(filePathAndName);
             this.setClExist(true);
@@ -61,6 +63,7 @@ public class ClassifierDecisionTree {
     }
 
     public Instances evalClassifier(File fileName, String resPath) {
+        log.info("评估决策树分类器模型");
         Instances res = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -91,6 +94,7 @@ public class ClassifierDecisionTree {
     }
 
     public Instances insClassify(File fileName, String resPath) {
+        log.info("使用决策树分类器模型进行分类");
         Instances insRes = null;
         try {
             if (!isClExist()) {

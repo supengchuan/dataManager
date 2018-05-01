@@ -77,7 +77,7 @@ public class SVMCoefficient {
         for (int iter = 0; iter < maxIters; iter++) {
 
             CostAndGrad(X, y);
-            System.out.println("cost:" + cost);
+            //System.out.println("cost:" + cost);
             if (cost < threshold) {
                 break;
             }

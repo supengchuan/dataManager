@@ -28,6 +28,7 @@ public class ClassifierKNN {
     }
 
     public void createClassifier(File fileName, String modelPath) {
+        log.info("创建KNN分类器模型");
         Instances insTrain = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -54,6 +55,7 @@ public class ClassifierKNN {
     }
 
     public void loadClassifier(String filePathAndName) {
+        log.info("加载KNN分类器模型");
         try {
             this.cl = (Classifier)weka.core.SerializationHelper.read(filePathAndName);
             setClExist(true);
@@ -64,6 +66,7 @@ public class ClassifierKNN {
     }
 
     public Instances evalClassifier(File fileName, String resPath) {
+        log.info("评估KNN分类器模型");
         Instances res = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -93,6 +96,7 @@ public class ClassifierKNN {
     }
 
     public Instances insClassify(File fileName, String resPath) {
+        log.info("使用KNN分类器模型进行分类");
         try {
             if(!isClExist()) {
                 log.error("Must be build classifier before classify data!");

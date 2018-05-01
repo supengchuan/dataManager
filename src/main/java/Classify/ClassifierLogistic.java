@@ -24,10 +24,12 @@ public class ClassifierLogistic {
 
     private static final Logger log = Logger.getLogger(ClassifierLogistic.class);
     public ClassifierLogistic() {
+        log.info("Logistic分类器对象被创建");
         this.setClExist(false);
     }
 
     public void createClassifier(File fileName, String modelPath) {
+        log.info("创建Logistic分类器模型");
         Instances insTrain;
         try {
             ArffLoader loader = new ArffLoader();
@@ -51,6 +53,7 @@ public class ClassifierLogistic {
     }
 
     public void loadClassifier(String filePathAndName) {
+        log.info("加载Logistic分类器模型");
         try {
             this.cl = (Classifier) weka.core.SerializationHelper.read(filePathAndName);
             this.setClExist(true);
@@ -62,6 +65,7 @@ public class ClassifierLogistic {
 
 
     public Instances evalClassifier(File fileName, String resPath) {
+        log.info("评估Logistic分类器模型");
         Instances res = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -91,6 +95,7 @@ public class ClassifierLogistic {
     }
 
     public Instances insClassify(File fileName, String resPath) {
+        log.info("使用Logistic分类器模型进行分类");
         try {
             if (!isClExist()) {
                 log.error("Must be build classifier before classify data!");

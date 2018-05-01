@@ -24,10 +24,12 @@ public class ClassifierSVM {
 
     private static final Logger log = Logger.getLogger(ClassifierSVM.class);
     public ClassifierSVM() {
+        log.info("SVM对象被创建");
         this.setClExist(false);
     }
 
     public void createClassifier(File fileName, String modelPath) {
+        log.info("创建SVM分类器模型");
         Instances insTrain = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -50,6 +52,7 @@ public class ClassifierSVM {
     }
 
     public void loadClassifier(String filePathAndName) {
+        log.info("加载SVM分类器模型");
         try {
             this.cl = (Classifier) weka.core.SerializationHelper.read(filePathAndName);
             this.setClExist(true);
@@ -60,6 +63,7 @@ public class ClassifierSVM {
     }
 
     public Instances evalClassifier(File fileName, String resPath) {
+        log.info("评估SVM分类器模型");
         Instances res = null;
         try {
             ArffLoader loader = new ArffLoader();
@@ -89,6 +93,7 @@ public class ClassifierSVM {
     }
 
     public Instances insClassify(File fileName, String resPath) {
+        log.info("使用SVM分类器模型");
         try {
             if (!isClExist()) {
                 log.error("Must be build classifier before classify data!");

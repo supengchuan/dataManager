@@ -14,10 +14,9 @@ public class TopsisTest extends TestCase {
         double[] w = {3, 1, 2, 1, 1, 2};
         String[] impacts = {"+", "+", "+", "-", "+", "+"};
         double[] res = Topsis.m_Topsis(decision, w, impacts);
-
-        for (double i : res) {
-            System.out.println(i);
-        }
+        for (double i : res)
+            System.out.print(i + " ");
+        System.out.println();
     }
 
 }

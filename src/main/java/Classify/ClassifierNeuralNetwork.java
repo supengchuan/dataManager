@@ -38,7 +38,7 @@ public class ClassifierNeuralNetwork {
             this.cl = new NaiveBayes();
             this.cl.buildClassifier(insTrain);
 
-            SerializationHelper.write(modelPath + "NeuralNetworkBayes.model", this.cl);
+            SerializationHelper.write(modelPath + "NeuralNetwork.model", this.cl);
             setClExist(true);
 
         } catch (IOException e) {

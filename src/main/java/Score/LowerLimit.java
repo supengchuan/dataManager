@@ -1,5 +1,6 @@
 package Score;
 
+import Preprocessor.Statistics;
 import org.apache.log4j.Logger;
 
 /**
@@ -22,6 +23,7 @@ public class LowerLimit {
         }
         return sum;
     }
+
     public static double[] m_LowerLimit(double[] dataSet, double Ll, double delta, double u) {
         log.info("默认高斯基函下限型打分方法被调用。");
 
@@ -38,6 +40,7 @@ public class LowerLimit {
         }
         return dataSet;
     }
+
     public static double[] m_LowerLimitWithLinearBase(double[] dataSet, double Ll, double delta) {
         log.info("线性基函数下限型打分方法被调用。");
 
@@ -79,5 +82,14 @@ public class LowerLimit {
             }
         }
         return dataSet;
+    }
+
+    public static double m_LowerLimitWithDEA(double lower, double[] dataSet) {
+        double min = Statistics.getMin(dataSet);
+        double max = Statistics.getMax(dataSet);
+        double mean = Statistics.getAverage(dataSet);
+        double S = 95 * (1 + (1 - lower / min) * (1 - lower / mean));
+        if (S > 100) S = 100;
+        return S;
     }
 }

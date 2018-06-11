@@ -1,5 +1,7 @@
 package Score;
 
+import Preprocessor.Statistics;
+import com.sun.xml.internal.ws.api.model.MEP;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,7 +20,7 @@ public class IntervalType {
     * mathSD： 数学标准差
     */
     private static double gaussian(double x, double delta, double u) {
-        return 1 / (Math.sqrt(2*3.14) * delta) * Math.exp(-((x - u) * (x - u)) / (2 * delta * delta));
+        return 1 / (Math.sqrt(2 * 3.14) * delta) * Math.exp(-((x - u) * (x - u)) / (2 * delta * delta));
     }
 
 
@@ -58,12 +60,23 @@ public class IntervalType {
         for (int i = 0; i < dataSet.length; i++) {
             if (dataSet[i] >= (mathException - mathSD)
                     && dataSet[i] <= (mathException + mathSD)) {
-                dataSet[i] = 100 - 5 / Math.pow(mathSD,2) * Math.pow((dataSet[i] - mathException), 2);
+                dataSet[i] = 100 - 5 / Math.pow(mathSD, 2) * Math.pow((dataSet[i] - mathException), 2);
             } else {
                 dataSet[i] = 0;
             }
         }
         return dataSet;
+    }
+
+    public static double m_IntervalTypeWithDEA(double lower, double upper, double[] dataSet) {
+        double min = Statistics.getMin(dataSet);
+        double max = Statistics.getMax(dataSet);
+        double alpha = 0.5;
+        double mean = Statistics.getAverage(dataSet);
+        double S = 95 * (1 +
+                (1 - (max - min) / (upper - lower + 0.001)) * (1 - Math.abs(2 * mean - upper - lower) / (upper - lower + 0.001)) * alpha);
+        if (S > 100) S = 100;
+        return S;
     }
 
 }

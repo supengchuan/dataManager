@@ -1,5 +1,6 @@
 package Score;
 
+import Preprocessor.Statistics;
 import org.apache.log4j.Logger;
 
 /**
@@ -82,5 +83,16 @@ public class UpperLimit {
         }
 
         return dataSet;
+    }
+
+    public static double m_UpperLimitWithDEA(double upper, double[] dataSet) {
+        double min = Statistics.getMin(dataSet);
+        double max = Statistics.getMax(dataSet);
+        double mean = Statistics.getAverage(dataSet);
+
+        double S = 95 * (1 + (1 - max / upper) * (1 - mean / upper));
+        if (S > 100) S = 100;
+
+        return S;
     }
 }

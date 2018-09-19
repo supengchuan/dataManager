@@ -39,4 +39,6 @@ public class IntervalTypeTest extends TestCase {
         System.out.println();
     }
 
+
+
 }
